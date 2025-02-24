@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorriso Perfeito - Login</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../Css/login.css">
+</head>
+<body>
+    <div class="wrapper">
+        <form action="../../MVC/view/index2.php?controller=user&action=LoginUsuario" method="POST">
+            <h1>Login</h1>
+            <div class="input-box">
+                <input type="email" id="nome" placeholder="Digite seu email:" required name="email">
+                <i class="bx bxs-user"></i>
+            </div>
+            <div class="input-box">
+                <input type="password" id="senha" placeholder="Digite sua Senha:" required name="senha">
+                <i class="bx bxs-lock-alt"></i>
+            </div>
+            <div class="relembrar">
+                <label>
+                    <input type="checkbox" id="relembrar"> Lembre-se de Mim
+                </label>
+                <a href="#">Esqueceu a senha?</a>
+            </div>
+
+            <button type="submit" class="btn">Entrar</button>
+
+            <div class="link-registro">
+                <p>Não tem uma conta?</p>
+                <a href="../HTML/registrar.html">Registrar</a>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

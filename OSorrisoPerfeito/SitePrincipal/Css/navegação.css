@@ -1,0 +1,75 @@
+#cabecalho .nav .nav-link.active {
+    background-color: #fff;
+}
+
+#cabecalho .nav .nav-link,
+.navbar-brand,
+.navbar-brand:hover,
+.nav-cardapio .nav-link.active:hover {
+    color: #fff;
+}
+
+#inicio {
+    background-image: url(https://i.redd.it/0i5uvw692wu81.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 500px;
+    height: 500px;
+    max-width: 100%;
+    background-color: #3e69a1;
+}
+
+.text-colored {
+    color: #12407c;
+}
+
+header {
+    background-color: var(--color-1);
+    box-shadow: 4px 4px 8px var(--color-2);
+}
+
+header .logo
+{
+    position: relative;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.6s;
+}
+
+header ul {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li {
+    position: relative;
+    list-style: none;
+}
+
+header ul li a {
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-weight: 500px;
+    transition: 0.6s;
+}
+
+section {
+    display: grid;
+    place-items: center;
+    align-content: center;
+    min-height: 100vh;
+}
+
+.banner {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+}

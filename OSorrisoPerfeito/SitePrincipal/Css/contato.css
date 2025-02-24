@@ -1,0 +1,40 @@
+footer{
+    background-color: var(--color-1);
+    box-shadow: 4px 4px 8px var(--color-2);
+    height: auto;
+    padding: 20px;
+    text-align: center;
+    color: var(--color-white);
+}
+
+#rodape a {
+    color: white;
+    text-decoration: none;
+}
+#rodape a:hover {
+    color: #cccccc;
+    text-decoration: none;
+}
+
+
+.form-control {
+    border-radius: 10px;
+    border: 2px solid var(--color-dark);
+    transition: box-shadow 0.3s;
+}
+
+.form-control:focus {
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+}
+
+h2, h3 , p , address , time ,h4 {
+    color: var(--color-white);
+}
+
+#contato {
+    background-color: #83bfff;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(29, 27, 27, 0.927);
+}
+

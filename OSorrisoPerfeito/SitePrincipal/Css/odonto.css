@@ -1,0 +1,161 @@
+
+/* Criação de variaveis */
+
+:root{
+    --color-dark: #272727; 
+    --color-white: floralwhite;
+    --color-1: #5fa4ff;
+    --color-2: #1b6f99;
+    --color-3: #41c1ba;
+    --color-4: #6c9286;
+    --color-tran: #6c92869d;
+
+
+}
+
+/* tudo dos titulos */
+
+.title{
+    color: var(--color-1);
+}
+
+.sob{
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+
+/* tudo dos especialista */
+/* Estrutura geral */
+.containers {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.desc{
+    font-size: 1.1rem;
+    color: #f4f0f0;
+}
+
+#tratamentos h4{
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.infos {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+/* Grid de imagens */
+.image-row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.image-box {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-width: 280px;
+    margin: 0 auto;
+    transition: transform 0.3s ease;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.image-box img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.4s ease;
+}
+
+.image-box:hover {
+    transform: translateY(-10px); /* Efeito de elevação ao passar o mouse */
+}
+
+.image-box:hover img {
+    transform: scale(1.1); /* Zoom leve na imagem */
+}
+
+/* Conteúdo ao passar o mouse */
+.hover-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.75);
+    color: white;
+    padding: 20px;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.image-box:hover .hover-content {
+    opacity: 1;
+    transform: translateY(0); /* Slide suave de baixo para cima */
+}
+
+.hover-content h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #ffcc00; /* Cor de destaque para o nome do especialista */
+}
+
+.hover-content p {
+    font-size: 0.9rem;
+    color: #ddd;
+    margin-top: 10px;
+}
+
+/* Estilo para a citação */
+.quote {
+    font-style: italic;
+    text-align: center;
+    margin-top: 40px;
+    font-size: 1.5rem;
+    color: #555;
+    padding: 20px;
+    border-left: 5px solid #ffcc00;
+    background: #f9f9f9;
+    display: inline-block;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .image-box {
+        max-width: 100%;
+    }
+
+    .quote {
+        font-size: 1.2rem;
+    }
+}
+
+@keyframes rotateXIn {
+    from {
+        transform: perspective(600px) translate3d(0, -60px, -2000px) rotateX(75deg);
+        opacity: 0;
+    }
+    5% { transform: perspective(600px) translate3d(0, -60px, -1500px) rotateX(75deg) }
+}
+
+.cssanimation, .cssanimation span {
+    animation-duration: 4s;
+    animation-fill-mode: both;
+}
+
+.cssanimation span { display: inline-block }
+
+.rotateXIn { animation-name: rotateXIn }

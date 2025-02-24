@@ -1,0 +1,132 @@
+/* tudo do card */
+
+.wrapper{
+    
+    height: 75vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container2R{
+    height: 500px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: start;
+    max-width: 100%;
+}
+
+
+.cards{
+    width: 50px;
+    border-radius: .75rem;
+    background-size: cover;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 2rem;
+    margin: 0 10px;
+    display: flex;
+    align-items: flex-end;
+    transition: .6s cubic-bezier(.28,-0.03,0,.99);
+    box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.8);
+}
+
+.cards > .rown{
+    color: rgb(0, 0, 0);
+    display: flex;
+    flex-wrap: nowrap;
+
+}
+
+.Info {
+    color: rgb(255, 255, 255);
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.466);
+    padding: 5px;
+}
+
+.cards > .rown > .description{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    height: 250px;
+    width: 350px;
+    opacity: 0;
+    transform: translateY(30px);
+    transition-delay: .3s;
+    transition: all .3s ease;
+
+}
+
+
+.description p{
+    color: rgb(255, 255, 255);
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, 0.13);
+    backdrop-filter: blur(20px);
+    padding: 5px;
+
+}
+
+.description h4{
+    text-transform: uppercase;
+
+}
+
+input{
+    display: none;
+}
+
+input:checked + label{
+    width: 600px;
+}
+
+input:checked  + label .description {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
+
+.cards[for = "f1"]{
+    background-position: center;
+    background-image: url(../imagens/cardsfotos/Foto2.jpg);
+}
+
+.cards[for = "f2"]{
+    background-image: url(../imagens/cardsfotos/FotoPNG.png);
+    background-position: center;
+    background-color: #3793f5;
+}
+
+.cards[for = "f3"]{
+    background-image: url(../imagens/cardsfotos/Foto3.jpg);
+    background-position: center;
+}
+
+.cards[for = "f4"]{
+    background-image: url(../imagens/cardsfotos/Foto4PNG.png);
+    background-position: center;
+    background-color: #3793f5;
+}
+
+.cards[for = "f5"]{
+    background-image: url(../imagens/cardsfotos/Foto5.jpg);
+    background-position: center;
+}
+
+.cards[for = "f6"]{
+    background-image: url(../imagens/cardsfotos/Foto6PNG.png);
+    background-position: center;
+    background-color: #3793f5;
+}
+
+.cards[for = "f7"]{
+    background-image: url(../imagens/cardsfotos/Foto7.jpg);
+    background-position: center;
+}
+
+.cards[for = "f8"]{
+    background-image: url(../imagens/cardsfotos/Foto8.jpg);
+    background-position: center;
+    background-color: #3793f5;
+}
